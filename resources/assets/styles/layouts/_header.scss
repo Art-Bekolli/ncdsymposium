@@ -5,6 +5,10 @@
     .container{
         display: flex;
         justify-content: space-between;
+        @include mobile{
+            flex-direction: column;
+            @include rem(gap, 30px);
+        }
         a{
             color: white;
             text-decoration: none;

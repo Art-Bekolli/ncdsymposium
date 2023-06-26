@@ -15,6 +15,6 @@
       </div>
 
     </div>
-    <div class="right"><span class="more">More information will follow soon.</span></div>
+    <div class="right"><div class="more">More information will follow soon.</div></div>
   </div>
 </footer>

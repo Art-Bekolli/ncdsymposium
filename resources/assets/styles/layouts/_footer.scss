@@ -12,6 +12,12 @@
     .container{
         display: flex;
     justify-content: space-between;
+    @include tablet{
+        flex-direction: column;
+    }
+    @include mobile{
+        flex-direction: column;
+    }
     .left{
         display: flex;
         flex-direction: column;
@@ -19,12 +25,12 @@
     }
     .right{
         position: relative;
-        @include rem(min-width, 408px);
-        .more{
-        @include rem(min-width, 408px);
-            position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
             bottom: 0;
-        }
+
     }
 }
 }

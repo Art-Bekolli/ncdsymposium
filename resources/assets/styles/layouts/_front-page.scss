@@ -11,20 +11,29 @@
                 @include rem(margin-top, 230px);
                 @include rem(max-width, 709px);
                 .one{
+                    position: relative;
                     font-weight: 400;
                     @include rem(font-size, 48px);
                     @include rem(line-height, 57px);
+                    z-index: 2;
+
                 }
                 .two{
+                    position: relative;
                     font-weight: 300;
                     @include rem(font-size, 44px);
                     @include rem(line-height, 55px);
+                    z-index: 2;
+
                 }
                 .three{
+                    position: relative;
                     font-weight: 300;
                     font-style: italic;
                     @include rem(font-size, 48px);
                 @include rem(line-height, 65.57px);
+                z-index: 2;
+
                 }
             }
             .right{
@@ -39,16 +48,19 @@
                     position: absolute;
                     @include rem(top, 38px);
                     @include rem(right, 295px);
+                    z-index: 0;
                 }
                 .hero-img2{
                     position: absolute;
                     @include rem(top, 162px);
                     @include rem(right, 42px);
+                    z-index: 0;
                 }
                 .hero-img3{
                     position: absolute;
                     @include rem(top, 451px);
                     @include rem(right, 272px);
+                    z-index: 0;
                 }
             }
         }
@@ -84,7 +96,7 @@
 
         .textarea{
             position: relative;
-            @include rem(padding, 72px 0);
+            @include rem(padding, 72px 20px);
             @include rem(font-size, 26px);
             @include rem(line-height, 35px);
             @include rem(max-width, 1108px);
@@ -131,6 +143,7 @@
                 font-style: italic;
                 @include rem(font-size, 56px);
                 .speakers{
+                    flex-wrap: wrap;
                     @include rem(margin-top, 96px);
                     display: flex;
                 @include rem(gap, 150px);
@@ -158,6 +171,7 @@
                 @include rem(font-size, 56px);
                 @include rem(padding-bottom, 224px);
                 .speakers{
+                    flex-wrap: wrap;
                     @include rem(margin-top, 96px);
                     display: flex;
                 @include rem(gap, 150px);
@@ -192,6 +206,12 @@
         .container{
             display: flex;
             @include rem(gap, 57px);
+            @include tablet{
+                flex-direction: column;
+            }
+            @include mobile{
+                flex-direction: column;
+            }
             .paragraph{
                 @include rem(margin-top, 156px);
                 font-weight: 300;
@@ -201,6 +221,14 @@
             }
             .p-img{
                 @include rem(margin-top, 124px);
+                display: flex;
+                justify-content: center;
+                @include tablet{
+                    margin-top: 0;
+                }
+                @include mobile{
+                    margin-top: 0;
+                }
             }
         }
     }
@@ -209,5 +237,12 @@
         font-weight: 300;
                 @include rem(font-size, 26px);
                 @include rem(line-height, 34px);
+
+                @include tablet{
+                    @include rem(margin-top, 100px);
+                }
+                @include mobile{
+                    @include rem(margin-top, 100px);
+                }
     }
 }
