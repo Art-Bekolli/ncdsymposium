@@ -32,6 +32,7 @@
     <img src="@field('projects_img3')" alt="" class="project3">
     <img src="@field('projects_im4')" alt="" class="project4">
     <img src="@field('projects_img5')" alt="" class="project5">
+    <img src="@field('projects_img6')" alt="" class="project6">
 
 </div>
 

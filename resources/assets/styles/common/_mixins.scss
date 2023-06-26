@@ -77,8 +77,8 @@
 ///     font-size:42px;
 ///     }
 /// }
-@mixin desktop {
-  @media only screen and (min-width: 1200px) {
+@mixin laptop {
+  @media only screen and (min-width: 1200px) and (max-width:1919px) {
     @content;
   }
 }

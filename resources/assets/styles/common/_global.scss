@@ -2,6 +2,18 @@
     @include rem(max-width, 1270px);
     margin: auto;
     font-family: 'lato';
+    @include laptop {
+        max-width: 90%;
+    }
+    @include tablet-big {
+        max-width: 90%;
+    }
+    @include tablet {
+        max-width: 90%;
+    }
+    @include mobile {
+        max-width: 90%;
+    }
 }
 body{
     margin: 0;
