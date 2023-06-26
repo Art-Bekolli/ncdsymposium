@@ -119,6 +119,11 @@
             color: white;
             img{
                 @include rem(max-width, 270px);
+                @include rem(max-height, 351px);
+                @include rem(min-height, 351px);
+                object-fit: cover;
+                @include rem(border-radius, 37px);
+                border: 0.5rem solid #1f94c7;
             }
             .welcome{
                 @include rem(padding, 133px 0 118px 0);

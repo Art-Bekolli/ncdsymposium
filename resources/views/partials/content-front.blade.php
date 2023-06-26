@@ -60,9 +60,9 @@
         <div class="keynote">
             @field('keynote_speech_txt')
             <div class="speakers">
-                <div class="speakers__one"><img src="@field('welcome_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">Mr. Sean Taylor</div>  <div class="title">MS, World Heart Federation</div></div></div>
-                <div class="speakers__two"><img src="@field('welcome_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Fatmire Mulhaxha- Kollcaku</div>  <div class="title">Chairman of the Commission for<br> health and Social Welfare</div></div></div>
-                <div class="speakers__three"><img src="@field('welcome_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Rushit ismaili</div>  <div class="title">Family Physician</div></div></div>
+                <div class="speakers__one"><img src="@field('keynote_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">Mr. Sean Taylor</div>  <div class="title">MS, World Heart Federation</div></div></div>
+                <div class="speakers__two"><img src="@field('keynote_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Fatmire Mulhaxha- Kollcaku</div>  <div class="title">Chairman of the Commission for<br> health and Social Welfare</div></div></div>
+                <div class="speakers__three"><img src="@field('keynote_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Rushit ismaili</div>  <div class="title">Family Physician</div></div></div>
             </div>
         </div>
 
