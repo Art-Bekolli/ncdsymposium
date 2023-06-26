@@ -1,33 +1,54 @@
 .section{
     &__hero{
-        background-color: $lightred;
+        background-color: $globalblue;
         .container{
             display: flex;
             justify-content: space-between;
             .left{
                 color: white;
-                @include rem(font-size, 39px);
-                @include rem(line-height, 46px);
+                
                 @include rem(margin-top, 230px);
-                @include rem(max-width, 572px);
+                @include rem(max-width, 709px);
                 .one{
-                    font-weight: 700;
+                    font-weight: 400;
+                    @include rem(font-size, 48px);
+                    @include rem(line-height, 57px);
                 }
                 .two{
-                    font-weight: 400;
+                    font-weight: 300;
+                    @include rem(font-size, 44px);
+                    @include rem(line-height, 55px);
                 }
                 .three{
-                    font-weight: 400;
+                    font-weight: 300;
                     font-style: italic;
+                    @include rem(font-size, 48px);
+                @include rem(line-height, 65.57px);
                 }
             }
             .right{
                 @include rem(margin, 57px 0 185px 0);
-                @include rem(max-width, 464px);
-                @include rem(max-height, 464px);
-                object-fit: contain;
-                border-radius: 100%;
-                border: 1.8rem solid $darkred;
+                width: 100%;
+                width: -moz-available;          /* WebKit-based browsers will ignore this. */
+                width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+                width: fill-available;
+                height: 27vw;
+                position: relative;
+                .hero-img{
+                    position: absolute;
+                    @include rem(top, 38px);
+                    @include rem(left, 126px);
+                }
+                .hero-img2{
+                    position: absolute;
+                    @include rem(top, 162px);
+                    @include rem(left, 329px);
+                }
+                .hero-img3{
+                    position: absolute;
+                    @include rem(top, 451px);
+                    @include rem(left, 159px);
+                }
             }
         }
     }

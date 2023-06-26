@@ -1,5 +1,5 @@
 .banner{
-    background-color: $lightred;
+    background-color: $globalblue;
     @include rem(padding, 40px 0);
     
     .container{
@@ -19,6 +19,10 @@
             li{
                 font-weight: 300;
             @include rem(font-size, 30px);
+            @include rem(padding, 9px 36px);
+            @include rem(border-radius, 50px);
+            @include rem(line-height, 38.25px);
+            border: 1px solid white;
             }
         }
     }
