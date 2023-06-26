@@ -45,25 +45,34 @@
                 height: 27vw;
                 position: relative;
                 img{
-                    @include rem(min-width, 200px);
+                    @include rem(min-width, 150px);
                 }
                 .hero-img{
                     position: absolute;
                     @include rem(top, 38px);
                     @include rem(right, 295px);
                     z-index: 0;
+                    @include mobile{
+                        @include rem(right, 140px);
+                    }
                 }
                 .hero-img2{
                     position: absolute;
                     @include rem(top, 162px);
                     @include rem(right, 42px);
                     z-index: 0;
+                    @include mobile{
+                        @include rem(right, 0px);
+                    }
                 }
                 .hero-img3{
                     position: absolute;
                     @include rem(top, 451px);
                     @include rem(right, 272px);
                     z-index: 0;
+                    @include mobile{
+                        @include rem(right, 130px);
+                    }
                 }
             }
         }
