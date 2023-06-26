@@ -44,6 +44,9 @@
                 width: fill-available;
                 height: 27vw;
                 position: relative;
+                img{
+                    @include rem(min-width, 100px);
+                }
                 .hero-img{
                     position: absolute;
                     @include rem(top, 38px);
