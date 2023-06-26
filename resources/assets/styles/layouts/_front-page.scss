@@ -38,17 +38,17 @@
                 .hero-img{
                     position: absolute;
                     @include rem(top, 38px);
-                    @include rem(left, 126px);
+                    @include rem(right, 295px);
                 }
                 .hero-img2{
                     position: absolute;
                     @include rem(top, 162px);
-                    @include rem(left, 329px);
+                    @include rem(right, 42px);
                 }
                 .hero-img3{
                     position: absolute;
                     @include rem(top, 451px);
-                    @include rem(left, 159px);
+                    @include rem(right, 272px);
                 }
             }
         }
@@ -198,5 +198,11 @@
                 @include rem(margin-top, 124px);
             }
         }
+    }
+
+    &__registration{
+        font-weight: 300;
+                @include rem(font-size, 26px);
+                @include rem(line-height, 34px);
     }
 }

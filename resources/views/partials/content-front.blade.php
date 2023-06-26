@@ -81,6 +81,17 @@
         </svg>
         </div>
 
+
 </div>
+
+</section>
+
+<section class="section__registration">
+
+    <div class="container">
+
+        @field('textfield2')
+
+    </div>
 
 </section>
