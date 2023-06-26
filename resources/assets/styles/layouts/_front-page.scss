@@ -1,6 +1,7 @@
 .section{
     &__hero{
         background-color: $globalblue;
+        @include rem(min-height, 750px);
         .container{
             display: flex;
             justify-content: space-between;
