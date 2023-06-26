@@ -1,0 +1,25 @@
+.banner{
+    background-color: $lightred;
+    @include rem(padding, 40px 0);
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .brand{
+            font-weight: 700;
+            @include rem(font-size, 39px);
+        }
+        .nav{
+            display: flex;
+            @include rem(gap, 60px);
+            li{
+                font-weight: 300;
+            @include rem(font-size, 30px);
+            }
+        }
+    }
+}

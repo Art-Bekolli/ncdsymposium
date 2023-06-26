@@ -1,0 +1,5 @@
+.container{
+    @include rem(max-width, 1270px);
+    margin: auto;
+    font-family: 'lato';
+}
