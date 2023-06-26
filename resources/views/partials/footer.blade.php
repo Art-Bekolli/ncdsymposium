@@ -5,12 +5,12 @@
       <div class="press">Press inquiries:</div>
 
       <div class="info1">
-        AQH Senior Communication<br>
+        AQH<br>
         zana.aqifi@aqhproject.org
       </div>
 
       <div class="info2">
-        IHS Advocacy and Communication<br>
+        IHS<br>
         linda.baleta@ihsproject.org
       </div>
 
