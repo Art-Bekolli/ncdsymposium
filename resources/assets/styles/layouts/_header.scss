@@ -3,13 +3,12 @@
     @include rem(padding, 40px 0);
     
     .container{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: wrap;
-        img{
-            height: 100%;
-            @include rem(width, 218px);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        @include mobile{
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 2.6rem;
         }
+        @include rem(column-gap, 138px);
     }
 }
