@@ -1,10 +1,8 @@
 <header class="banner">
   <div class="container">
-    <a class="brand" href="{{ home_url('/') }}"> {{ get_bloginfo('name', 'display') }}</a>
-    <nav class="nav-primary">
-      @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-      @endif
-    </nav>
+    <img src="@field('projects_img1')" alt="" class="project1">
+    <img src="@field('projects_img5')" alt="" class="project5">
+    <img src="@field('projects_img6')" alt="" class="project6">
+    <img src="@field('projects_img3')" alt="" class="project3">
   </div>
 </header>

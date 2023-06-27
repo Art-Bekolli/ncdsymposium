@@ -1,33 +1,14 @@
 .banner{
-    background-color: $globalblue;
+    background-color: white;
     @include rem(padding, 40px 0);
     
     .container{
         display: flex;
-        justify-content: space-between;
-        @include mobile{
-            flex-direction: column;
-            @include rem(gap, 30px);
-        }
-        a{
-            color: white;
-            text-decoration: none;
-        }
-        .brand{
-            font-weight: 700;
-            @include rem(font-size, 39px);
-        }
-        .nav{
-            display: flex;
-            @include rem(gap, 60px);
-            li{
-                font-weight: 300;
-            @include rem(font-size, 30px);
-            @include rem(padding, 9px 36px);
-            @include rem(border-radius, 50px);
-            @include rem(line-height, 38.25px);
-            border: 1px solid white;
-            }
+        justify-content: space-evenly;
+        align-items: center;
+        img{
+            height: 100%;
+            @include rem(max-width, 218px);
         }
     }
 }

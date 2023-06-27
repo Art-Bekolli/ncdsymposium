@@ -8,10 +8,35 @@
         </div>
 
         <div class="right">
-            <img src="@field('hero_img')" alt="" class="hero-img">
-            <img src="@field('hero_img2')" alt="" class="hero-img2">
-            <img src="@field('hero_img3')" alt="" class="hero-img3">
+            <svg width="738" height="295" viewBox="0 0 738 295" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="147" width="148" height="148" fill="#5357A1"/>
+                <path d="M148 295L0 147H148V295Z" fill="#D2D3EF"/>
+                <circle cx="74" cy="221" r="41.7293" fill="#76D0D9"/>
+                <rect x="442" width="148" height="148" fill="#5357A1"/>
+                <path d="M590 148L442 0H590V148Z" fill="#D2D3EF"/>
+                <circle cx="516" cy="74" r="41.7293" fill="#76D0D9"/>
+                <rect x="590" y="147" width="148" height="148" fill="#A5A9D8"/>
+                <path d="M738 295L590 147H738V295Z" fill="#76D0D9"/>
+                <rect x="295" y="147" width="148" height="148" fill="#A5A9D8"/>
+                <ellipse cx="184.5" cy="185" rx="36.5" ry="37" fill="#D2D3EF"/>
+                <circle cx="258" cy="185" r="37" fill="#D2D3EF"/>
+                <ellipse cx="479.5" cy="185" rx="36.5" ry="37" fill="#76D0D9"/>
+                <circle cx="553" cy="185" r="37" fill="#D2D3EF"/>
+                <ellipse cx="701" cy="110.5" rx="37" ry="36.5" fill="#76D0D9"/>
+                <ellipse cx="627.5" cy="37" rx="36.5" ry="37" fill="#5357A1"/>
+                <ellipse cx="627.5" cy="110" rx="36.5" ry="37" fill="#A5A9D8"/>
+                <circle cx="701" cy="37" r="37" fill="#D2D3EF"/>
+                </svg>                                    
         </div>
+    </div>
+
+</section>
+<section class="section__date">
+
+    <div class="container">
+
+        <div class="left">22-29 <div class="bold">SEPTEMBER</div> 2023</div>
+
     </div>
 
 </section>

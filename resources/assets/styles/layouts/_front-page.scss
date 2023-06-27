@@ -1,30 +1,62 @@
 .section{
     &__hero{
-        background-color: $globalblue;
-        @include rem(min-height, 750px);
+        background-color: white;
+        overflow: hidden;
         .container{
             display: flex;
             justify-content: space-between;
             .left{
-                color: white;
-                
-                @include rem(margin-top, 230px);
-                @include rem(max-width, 709px);
+                color: #59589B;
+                @include rem(max-width, 425px);
+                @include mobile{
+                    max-width:100%;
+                }
                 .one{
                     position: relative;
-                    font-weight: 400;
-                    @include rem(font-size, 48px);
-                    @include rem(line-height, 57px);
+                    font-weight: 800;
+                    @include rem(font-size, 83px);
+                    @include rem(min-width, 915px);
+                    @include rem(line-height, 90px);
                     z-index: 2;
-
+                    @include tablet-big{
+                        min-width: unset;
+                    }
+                    @include tablet{
+                        min-width: unset;
+                    }
+                    @include mobile{
+                        min-width: unset;
+                        @include rem(font-size, 40px);
+                        @include rem(line-height, 50px);
+                    }
+                    .ncd_cont{
+                        position: relative;
+                        z-index: 2;
+                        @include rem(margin, 10px 0);
+                    &::after{
+                        content: " ";
+                        position: absolute;
+                        background-color: #d0d1f0;
+                        @include rem(border-radius, 50px);
+                        @include rem(padding, 10px 30px);
+                        width: 100%;
+                        height: 100%;
+                        @include rem(top, -10px);
+                        @include rem(left, -33px);
+                        z-index:-1;
+                    }
+                }
                 }
                 .two{
                     position: relative;
-                    font-weight: 300;
-                    @include rem(font-size, 44px);
-                    @include rem(line-height, 55px);
+                    font-weight: 400;
+                    @include rem(font-size, 75px);
                     z-index: 2;
-
+                    color: #7AD4D2;
+                    @include mobile{
+                        @include rem(font-size, 40px);
+                        @include rem(line-height, 50px);
+                    }
                 }
                 .three{
                     position: relative;
@@ -37,42 +69,27 @@
                 }
             }
             .right{
-                @include rem(margin, 57px 0 185px 0);
+                @include rem(margin, 41px 0 0 0);
                 width: 100%;
                 width: -moz-available;          /* WebKit-based browsers will ignore this. */
                 width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
                 width: fill-available;
-                height: 27vw;
+                @include rem(height, 650px);
                 position: relative;
-                img{
-                    @include rem(min-width, 150px);
-                }
-                .hero-img{
+                svg{
                     position: absolute;
-                    @include rem(top, 38px);
-                    @include rem(right, 295px);
-                    z-index: 0;
-                    @include mobile{
-                        @include rem(right, 140px);
-                    }
+                    bottom: 0;
+                    right: 0;
+                    
                 }
-                .hero-img2{
-                    position: absolute;
-                    @include rem(top, 162px);
-                    @include rem(right, 42px);
-                    z-index: 0;
-                    @include mobile{
-                        @include rem(right, 0px);
-                    }
+                @include tablet-big{
+                    display: none;
                 }
-                .hero-img3{
-                    position: absolute;
-                    @include rem(top, 451px);
-                    @include rem(right, 272px);
-                    z-index: 0;
-                    @include mobile{
-                        @include rem(right, 130px);
-                    }
+                @include tablet{
+                    display: none;
+                }
+                @include mobile{
+                    display: none;
                 }
             }
         }
@@ -139,6 +156,22 @@
 
         
     }
+    }
+
+    &__date{
+        color:white;
+        background-color: #76D0D9;
+        border-top-right-radius: 50vw;
+        border-bottom-right-radius: 50vw;
+            .left{
+                @include rem(padding, 30px 0);
+                @include rem(font-size, 40px);
+                @include rem(line-height, 45px);
+                font-weight: 300;
+                .bold{
+                    font-weight: 400;
+                }
+            }
     }
 
     &__speeches{
