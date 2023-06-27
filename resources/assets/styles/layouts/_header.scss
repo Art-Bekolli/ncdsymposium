@@ -9,7 +9,7 @@
         flex-wrap: wrap;
         img{
             height: 100%;
-            @include rem(max-width, 218px);
+            @include rem(width, 218px);
         }
     }
 }
