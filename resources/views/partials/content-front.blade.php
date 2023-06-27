@@ -48,21 +48,29 @@
 
     <div class="container">
 
-        <div class="welcome">
+        <div class="s-container welcome">
             @field('welcome_speech_txt')
             <div class="speakers">
-                <div class="speakers__one"> <img src="@field('welcome_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Arben Vitia</div>  <div class="title">Ministria of Health</div></div></div>
-                <div class="speakers__two"><img src="@field('welcome_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Naser Ramadani</div>  <div class="title">NIPHK</div></div></div>
-                <div class="speakers__three"><img src="@field('welcome_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">Mr. Laurent Torche</div>  <div class="title">SDC - Swiss Embassy</div></div></div>
+                <div class="speaker speakers__one"> <img src="@field('welcome_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Arben Vitia</div>  <div class="title">Ministria of Health</div></div></div>
+                <div class="speaker speakers__two"><img src="@field('welcome_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Naser Ramadani</div>  <div class="title">NIPHK</div></div></div>
+                <div class="speaker speakers__three"><img src="@field('welcome_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">Mr. Laurent Torche</div>  <div class="title">SDC - Swiss Embassy</div></div></div>
             </div>
         </div>
 
-        <div class="keynote">
+        <div class="s-container keynote">
             @field('keynote_speech_txt')
             <div class="speakers">
-                <div class="speakers__one"><img src="@field('keynote_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">Mr. Sean Taylor</div>  <div class="title">MS, World Heart Federation</div></div></div>
-                <div class="speakers__two"><img src="@field('keynote_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Fatmire Mulhaxha- Kollcaku</div>  <div class="title">Chairman of the Commission for<br> health and Social Welfare</div></div></div>
-                <div class="speakers__three"><img src="@field('keynote_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Rushit ismaili</div>  <div class="title">Family Physician</div></div></div>
+                <div class="speaker speakers__one"><img src="@field('keynote_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">Mr. Sean Taylor</div>  <div class="title">MS, World Heart Federation</div></div></div>
+                <div class="speaker speakers__two"><img src="@field('keynote_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Fatmire Mulhaxha- Kollcaku</div>  <div class="title">Chairman of the Commission for<br> health and Social Welfare</div></div></div>
+                <div class="speaker speakers__three"><img src="@field('keynote_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Rushit ismaili</div>  <div class="title">Family Physician</div></div></div>
+            </div>
+        </div>
+
+        <div class="s-container organizing">
+            @field('organizing_speech_txt')
+            <div class="speakers">
+                <div class="speaker speakers__one"><img src="@field('organizing_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">Florije Miftari Basholli</div>  <div class="title">Instituti Kombëtar i Shëndetësisë Publike</div></div></div>
+
             </div>
         </div>
 
