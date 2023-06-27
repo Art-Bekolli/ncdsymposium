@@ -6,6 +6,7 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        flex-wrap: wrap;
         img{
             height: 100%;
             @include rem(max-width, 218px);
