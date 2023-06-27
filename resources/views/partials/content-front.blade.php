@@ -69,7 +69,7 @@
         <div class="s-container organizing">
             @field('organizing_speech_txt')
             <div class="speakers">
-                <div class="speaker speakers__one"><img src="@field('organizing_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">Florije Miftari Basholli</div>  <div class="title">Instituti Kombëtar i Shëndetësisë Publike</div></div></div>
+                <div class="speaker speakers__one"><img src="@field('organizing_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">Florije Miftari Basholli</div>  <div class="title">NIPHK</div></div></div>
 
             </div>
         </div>
