@@ -207,6 +207,8 @@
 
                 .text{
                     @include rem(margin-top, 15px);
+                    @include rem(max-width, 348px);
+                    word-break: break-word;
                     .name{
                         font-weight: 500;
                         @include rem(font-size, 26px);
