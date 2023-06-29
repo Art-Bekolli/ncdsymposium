@@ -203,12 +203,11 @@
                     display: flex;
                     align-items: center;
                     flex-direction: column;
+                    @include rem(max-width, 328px);
                 }
 
                 .text{
                     @include rem(margin-top, 15px);
-                    @include rem(max-width, 348px);
-                    word-break: break-word;
                     .name{
                         font-weight: 500;
                         @include rem(font-size, 26px);
