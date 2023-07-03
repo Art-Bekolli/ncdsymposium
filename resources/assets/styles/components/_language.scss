@@ -1,0 +1,16 @@
+.language-button{
+    position: fixed;
+    @include rem(padding, 10px);
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: end;
+    select{
+        border: 1px solid $globalblue;
+        border-radius: 0px;
+        background: white;
+        color: $globalblue;
+        @include rem(padding, 10px);
+        @include rem(margin-right, 50px);
+    }
+}

@@ -8,6 +8,7 @@
       <div class="content">
         <main class="main">
           @yield('content')
+          @include('partials.components.lang-switch')
         </main>
         @if (App\display_sidebar())
           <aside class="sidebar">
