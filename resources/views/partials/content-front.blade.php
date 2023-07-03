@@ -1,7 +1,4 @@
-@php session_start();
-
-$_SESSION['lang'] = '-sq';
-@endphp
+@php session_start(); @endphp
 <section class="section__hero">
     <div class="container">
         <div class="left">
