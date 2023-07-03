@@ -76,8 +76,8 @@
         <div class="s-container welcome">
             @field('welcome_speech_txt')
             <div class="speakers">
-                @php $real = 'welcome_one';@endphp
-                <div class="speaker speakers__one"> <img src="@field($real)" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Arben Vitia</div>  <div class="title">Ministry of Health</div></div></div>
+                @php $real = '-sq';@endphp
+                <div class="speaker speakers__one"> <img src="@field('welcome-one' . $real)" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Arben Vitia</div>  <div class="title">Ministry of Health</div></div></div>
                 <div class="speaker speakers__two"><img src="@field('welcome_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Naser Ramadani</div>  <div class="title">NIPHK</div></div></div>
                 <div class="speaker speakers__three"><img src="@field('welcome_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">Mr. Laurent Torche</div>  <div class="title">SDC - Swiss Embassy</div></div></div>
             </div>
