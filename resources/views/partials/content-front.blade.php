@@ -1,8 +1,8 @@
 <section class="section__hero">
-
+    @php $real = '-sq';@endphp
     <div class="container">
         <div class="left">
-            <div class="one">@field("hero_text1")</div>
+            <div class="one">@field("hero_text1" . $real)</div>
             <div class="two">@field("hero_text2")</div>
             <div class="three">@field("hero_text3")</div>
         </div>
@@ -76,8 +76,7 @@
         <div class="s-container welcome">
             @field('welcome_speech_txt')
             <div class="speakers">
-                @php $real = '-sq';@endphp
-                <div class="speaker speakers__one"> <img src="@field('welcome-one' . $real)" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Arben Vitia</div>  <div class="title">Ministry of Health</div></div></div>
+                <div class="speaker speakers__one"> <img src="@field('welcome-one')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Arben Vitia</div>  <div class="title">Ministry of Health</div></div></div>
                 <div class="speaker speakers__two"><img src="@field('welcome_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Naser Ramadani</div>  <div class="title">NIPHK</div></div></div>
                 <div class="speaker speakers__three"><img src="@field('welcome_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">Mr. Laurent Torche</div>  <div class="title">SDC - Swiss Embassy</div></div></div>
             </div>
