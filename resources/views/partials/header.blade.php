@@ -1,7 +1,4 @@
-@php session_start();
 
-$_SESSION['lang'] = '-sq';
-@endphp
 <header class="banner">
   <div class="container">
     <img src="@field('projects_img1')" alt="" class="project1">
