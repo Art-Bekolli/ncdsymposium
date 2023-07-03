@@ -1,4 +1,4 @@
-@php session_start(); @endphp
+
 <section class="section__hero">
     <div class="container">
         <div class="left">
