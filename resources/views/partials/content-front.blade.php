@@ -2,7 +2,7 @@
     @php $real = '-sq';@endphp
     <div class="container">
         <div class="left">
-            <div class="one">@field("hero_text1-sq")</div>
+            <div class="one">@field("hero_text1" . $real)</div>
             <div class="two">@field("hero_text2")</div>
             <div class="three">@field("hero_text3")</div>
         </div>
