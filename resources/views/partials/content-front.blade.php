@@ -84,7 +84,7 @@
         <div class="s-container keynote">
             @field('keynote_speech_txt' . $_SESSION['lang'])
             <div class="speakers">
-                <div class="speaker speakers__one"><img src="@field('keynote_one')" alt="" class="speaker-img"> <div class="text"> <div class="name notranslate">MS. Sean Taylor</div>  <div class="title">World Heart Federation</div></div></div>
+                <div class="speaker speakers__one"><img src="@field('keynote_one')" alt="" class="speaker-img"> <div class="text"> <div class="name notranslate">Mr. Sean Taylor</div>  <div class="title">World Heart Federation</div></div></div>
                 <div class="speaker speakers__two"><img src="@field('keynote_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Fatmire Mulhaxha Kollçaku</div>  <div class="title">Chair of the Commission for<br> Health and Social
                     Welfare</div></div></div>
                 <div class="speaker speakers__three"><img src="@field('keynote_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Rushit Ismaili</div>  <div class="title">Family Physician</div></div></div>
