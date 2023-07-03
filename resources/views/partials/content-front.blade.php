@@ -5,7 +5,7 @@
             <div class="two">@field("hero_text2" . $_SESSION['lang'])</div>
             <div class="three">@field("hero_text3" . $_SESSION['lang'])</div>
         </div>
-
+@php echo $_SESSION['lang']; @endphp
         <div class="right">
             <svg width="738" height="295" viewBox="0 0 738 295" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="147" width="148" height="148" fill="#5357A1"/>
