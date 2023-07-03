@@ -73,7 +73,7 @@
     <div class="container">
 
         <div class="s-container welcome">
-            @field('welcome_speech_txt')
+            @field('welcome_speech_txt' . $_SESSION['lang'])
             <div class="speakers">
                 <div class="speaker speakers__one"> <img src="@field('welcome_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Arben Vitia</div>  <div class="title">Ministry of Health</div></div></div>
                 <div class="speaker speakers__two"><img src="@field('welcome_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Naser Ramadani</div>  <div class="title">NIPHK</div></div></div>
