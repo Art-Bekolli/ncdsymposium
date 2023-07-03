@@ -1,10 +1,9 @@
 <section class="section__hero">
-    @php $real = '-sq';@endphp
     <div class="container">
         <div class="left">
-            <div class="one">@field("hero_text1" . $real)</div>
-            <div class="two">@field("hero_text2")</div>
-            <div class="three">@field("hero_text3")</div>
+            <div class="one">@field("hero_text1" . $_SESSION['lang'])</div>
+            <div class="two">@field("hero_text2" . $_SESSION['lang'])</div>
+            <div class="three">@field("hero_text3" . $_SESSION['lang'])</div>
         </div>
 
         <div class="right">
@@ -44,7 +43,7 @@
 
 <div class="container">
 <div class="box">
-    <div class="left">@field('projects_txt')</div>
+    <div class="left">@field('projects_txt' . $_SESSION['lang'])</div>
     <div class="right">
         <img src="@field('projects_image_txt')" alt="" class="projects_img">
     </div>
@@ -63,7 +62,7 @@
 
 <div class="textarea">
 
-    @field('textarea')
+    @field('textarea' . $_SESSION['lang'])
 
 </div>
 </div>
@@ -83,7 +82,7 @@
         </div>
 
         <div class="s-container keynote">
-            @field('keynote_speech_txt')
+            @field('keynote_speech_txt' . $_SESSION['lang'])
             <div class="speakers">
                 <div class="speaker speakers__one"><img src="@field('keynote_one')" alt="" class="speaker-img"> <div class="text"> <div class="name notranslate">MS. Sean Taylor</div>  <div class="title">World Heart Federation</div></div></div>
                 <div class="speaker speakers__two"><img src="@field('keynote_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Fatmire Mulhaxha Kollçaku</div>  <div class="title">Chair of the Commission for<br> Health and Social
@@ -93,7 +92,7 @@
         </div>
 
         <div class="s-container organizing">
-            @field('organizing_speech_txt')
+            @field('organizing_speech_txt' . $_SESSION['lang'])
             <div class="speakers">
                 <div class="speaker speakers__one"><img src="@field('organizing_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">Florije Miftari Basholli</div>  <div class="title">NIPHK, Head of Ogranizing Committee</div></div></div>
 
@@ -108,7 +107,7 @@
 
 <div class="container">
 
-    <div class="paragraph">@field('paragraph2')</div>
+    <div class="paragraph">@field('paragraph2' . $_SESSION['lang'])</div>
     <div class="p-img"> <svg width="257" height="269" viewBox="0 0 257 269" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M2.34626 93.5102L128.5 1.85411L254.654 93.5102L206.467 241.813H50.5327L2.34626 93.5102Z" stroke="#1FE0E0" stroke-width="3"/>
         <path d="M2.65064 176.415L49.747 27.7626L205.677 26.6177L254.951 174.563L129.474 267.142L2.65064 176.415Z" stroke="#2A5DE0" stroke-width="3"/>
@@ -124,7 +123,7 @@
 
     <div class="container">
 
-        @field('textfield2')
+        @field('textfield2' . $_SESSION['lang'])
 
     </div>
 
