@@ -3,7 +3,7 @@
 $_SESSION['lang'] = '';
     $_SESSION['lang_v'];
 
-$langf = '-sq';
+$langf = '';
 if(isset($_POST["language"])){
   $lang=$_POST["language"];
       if($lang == 1){
@@ -15,8 +15,9 @@ if(isset($_POST["language"])){
         $langf = '-sq';
         header("Refresh:0");
       }
-  echo $langf;
+  
 }
+echo $langf;
 @endphp
 <footer class="content-info">
   <div class="container">
