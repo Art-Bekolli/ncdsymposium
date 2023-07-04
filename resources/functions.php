@@ -17,8 +17,20 @@ function register_session()
 
 add_action('init', 'register_session');
 
-
-
+$_SESSION['lang'] = '-sq';
+$_SESSION['lang_v'];
+   if(isset($_POST["language"])){
+       $lang=$_POST["language"];
+      if($lang == 1){
+        $_SESSION['lang'] = '';
+        $_SESSION['lang_v'] = 1;
+        header('Location: '.$_SERVER['REQUEST_URI']);
+      }else if($lang == 2){
+        $_SESSION['lang'] = '-sq';
+        $_SESSION['lang_v'] = 2;
+        header('Location: '.$_SERVER['REQUEST_URI']);
+      }
+   }
 
 
 /**

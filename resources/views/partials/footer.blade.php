@@ -1,9 +1,3 @@
-@php
-
-
-       $langf=$_POST["language"];
-
-@endphp
 <footer class="content-info">
   <div class="container">
     <div class="left">
