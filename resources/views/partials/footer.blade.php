@@ -2,14 +2,18 @@
 @php
 $_SESSION['lang'] = '';
     $_SESSION['lang_v'];
+
+$langf;
 if(isset($_POST["language"])){
   $lang=$_POST["language"];
       if($lang == 1){
         langeng();
+        $langf = '';
         header("Refresh:0");
       }else if($lang == 2){
         do_shortcode('set_lang-sq');
         langsq();
+        $langf = '-sq';
         header("Refresh:0");
       }
   
@@ -19,19 +23,19 @@ if(isset($_POST["language"])){
   <div class="container">
     <div class="left">
 
-      <div class="press"> @field('press_txt' . $_SESSION['lang'])</div>
+      <div class="press"> @field('press_txt' . $langf)</div>
 
       <div class="info1">
-        @field('press1_pos' . $_SESSION['lang'])<br>
-        @field('press1_name' . $_SESSION['lang'])
+        @field('press1_pos' . $langf)<br>
+        @field('press1_name' . $langf)
       </div>
 
       <div class="info2">
-        @field('press2_pos' . $_SESSION['lang'])<br>
-        @field('press2_name' . $_SESSION['lang']) 
+        @field('press2_pos' . $langf)<br>
+        @field('press2_name' . $langf) 
       </div>
 
     </div>
-      <div class="right"><div class="more">@field('information_txt' . $_SESSION['lang'])</div></div>
+      <div class="right"><div class="more">@field('information_txt' . $langf)</div></div>
   </div>
 </footer>
