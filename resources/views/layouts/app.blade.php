@@ -10,11 +10,11 @@ if(isset($_POST["language"])){
       if($lang == 1){
         langeng();
         $langf = '';
-        header("Refresh:0");
+        header("Refresh:1");
       }else if($lang == 2){
         langsq();
         $langf = '-sq';
-        header("Refresh:0");
+        header("Refresh:1");
       }
   
 }
