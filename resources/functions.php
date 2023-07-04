@@ -22,6 +22,7 @@ add_action('init', 'register_session');
 function langeng(){
     $_SESSION['lang'] = '';
     $_SESSION['lang_v'] = 1;
+    echo "eng";
 }
 
 add_shortcode('set_lang-eng', 'langeng');
@@ -29,6 +30,7 @@ add_shortcode('set_lang-eng', 'langeng');
 function langsq(){
     $_SESSION['lang'] = '-sq';
     $_SESSION['lang_v'] = 2;
+    echo "sq";
 }
 
 add_shortcode('set_lang-sq', 'langsq');
