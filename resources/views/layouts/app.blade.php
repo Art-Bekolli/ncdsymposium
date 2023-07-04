@@ -30,7 +30,7 @@ echo $langf;
       <div class="content">
         <main class="main">
           @yield('content')
-          @include('partials.components.lang-switch')
+          
         </main>
         @if (App\display_sidebar())
           <aside class="sidebar">
@@ -39,6 +39,9 @@ echo $langf;
         @endif
       </div>
     </div>
+    @php do_action('get_footer') @endphp
     @include('partials.footer')
+    @php wp_footer() @endphp
+    @include('partials.components.lang-switch')
   </body>
 </html>
