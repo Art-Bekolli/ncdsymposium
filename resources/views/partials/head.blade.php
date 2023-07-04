@@ -4,6 +4,7 @@
     $_SESSION['lang_v'];
 if(isset($_POST["language"])){
   do_shortcode('language_custom');
+  header("Refresh:0");
 }
 @endphp
 <head>
