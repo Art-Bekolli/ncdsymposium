@@ -1,3 +1,11 @@
+@php session_start();
+if($_SESSION['lang'] == ''){
+  echo 'eng';
+}else{
+  echo $_SESSION['lang'];
+}
+
+@endphp
 <footer class="content-info">
   <div class="container">
     <div class="left">
