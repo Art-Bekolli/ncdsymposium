@@ -4,7 +4,7 @@
 $_SESSION['lang'] = '';
     $_SESSION['lang_v'];
 
-$langf = '-sq';
+$langf = '';
 if(isset($_POST["language"])){
   $lang=$_POST["language"];
       if($lang == 1){
