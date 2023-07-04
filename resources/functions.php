@@ -12,25 +12,13 @@ function register_session()
   if( !session_id() )
   {
     session_start();
-
+    $_SESSION['lang'];
+    $_SESSION['lang_v'];
   }
 }
 
 add_action('init', 'register_session');
 
-
-   function languagefunction(){
-       $lang=$_POST["language"];
-      if($lang == 1){
-        $_SESSION['lang'] = '';
-        $_SESSION['lang_v'] = 1;
-      }else if($lang == 2){
-        $_SESSION['lang'] = '-sq';
-        $_SESSION['lang_v'] = 2;
-      }
-   }
-
-   add_shortcode( 'language_custom', 'languagefunction' );
 
 
 /**
