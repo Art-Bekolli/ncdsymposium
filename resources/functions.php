@@ -25,11 +25,11 @@ add_action('init', 'register_session');
       if($lang == 1){
         $_SESSION['lang'] = '';
         $_SESSION['lang_v'] = 1;
-        header('Location: '.$_SERVER['REQUEST_URI']);
+        header("Refresh:0");
       }else if($lang == 2){
         $_SESSION['lang'] = '-sq';
         $_SESSION['lang_v'] = 2;
-        header('Location: '.$_SERVER['REQUEST_URI']);
+        header("Refresh:0");
       }
    }
 
