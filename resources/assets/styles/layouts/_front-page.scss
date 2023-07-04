@@ -218,18 +218,23 @@
             display: flex;
             justify-content: center;
             .paragraph{
-                @include rem(margin, 156px 0);
+                @include rem(margin-top, 156px);
                 font-weight: 300;
                 font-style: italic;
                 @include rem(font-size, 26px);
                 @include rem(line-height, 34px);
+                position: relative;
+                @include rem(padding, 84px 27px);
+                p{
+                    @include rem(margin-bottom, 45px);
+                }
                 &::before{
                     content: "";
                     position: absolute;
                     inset: 0;
                     @include rem(border-radius, 61px);
                     @include rem(padding, 5px);
-                    background: linear-gradient(to top, #2051D0, #2E94F1);
+                    background: linear-gradient(to top, #5357A1, #7AD4D2);
                     -webkit-mask: 
                         linear-gradient(#fff 0 0) content-box, 
                         linear-gradient(#fff 0 0);

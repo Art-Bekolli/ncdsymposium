@@ -102,18 +102,10 @@
 
 <div class="container">
 
-    <div class="paragraph">@field('paragraph2' . $_SESSION['lang'])</div>
+    <div class="paragraph">@field('paragraph2' . $_SESSION['lang'])<br>
+        @field('textfield2' . $_SESSION['lang'])
+    </div>
 
 </div>
-
-</section>
-
-<section class="section__registration">
-
-    <div class="container">
-
-        @field('textfield2' . $_SESSION['lang'])
-
-    </div>
 
 </section>
