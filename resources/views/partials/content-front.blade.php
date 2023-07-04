@@ -2,9 +2,9 @@
 <section class="section__hero">
     <div class="container">
         <div class="left">
-            <div class="one">@field("hero_text1" . $_SESSION['lang'])</div>
-            <div class="two">@field("hero_text2" . $_SESSION['lang'])</div>
-            <div class="three">@field("hero_text3" . $_SESSION['lang'])</div>
+            <div class="one">@field("hero_text1" . $langf)</div>
+            <div class="two">@field("hero_text2" . $langf)</div>
+            <div class="three">@field("hero_text3" . $langf)</div>
         </div>
         <div class="right">
             <svg width="738" height="295" viewBox="0 0 738 295" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +34,7 @@
 
     <div class="container">
 
-        <div class="left">@field('stripe-txt' . $_SESSION['lang'])</div>
+        <div class="left">@field('stripe-txt' . $langf)</div>
 
     </div>
 
@@ -43,7 +43,7 @@
 
 <div class="container">
 <div class="box">
-    <div class="left">@field('projects_txt' . $_SESSION['lang'])</div>
+    <div class="left">@field('projects_txt' . $langf)</div>
     <div class="right">
         <img src="@field('projects_image_txt')" alt="" class="projects_img">
     </div>
@@ -58,7 +58,7 @@
 
 <div class="textarea">
 
-    @field('textarea' . $_SESSION['lang'])
+    @field('textarea' . $langf)
 
 </div>
 </div>
@@ -69,27 +69,27 @@
     <div class="container">
 
         <div class="s-container welcome">
-            @field('welcome_speech_txt' . $_SESSION['lang'])
+            @field('welcome_speech_txt' . $langf)
             <div class="speakers">
-                <div class="speaker speakers__one"> <img src="@field('welcome_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('welcome_one_name' . $_SESSION['lang'])</div>  <div class="title">@field('welcome_one_pos' . $_SESSION['lang'])</div></div></div>
-                <div class="speaker speakers__two"><img src="@field('welcome_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('welcome_two_name' . $_SESSION['lang'])</div>  <div class="title">@field('welcome_two_pos' . $_SESSION['lang'])</div></div></div>
-                <div class="speaker speakers__three"><img src="@field('welcome_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('welcome_three_name' . $_SESSION['lang'])</div>  <div class="title">@field('welcome_three_pos' . $_SESSION['lang'])</div></div></div>
+                <div class="speaker speakers__one"> <img src="@field('welcome_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('welcome_one_name' . $langf)</div>  <div class="title">@field('welcome_one_pos' . $langf)</div></div></div>
+                <div class="speaker speakers__two"><img src="@field('welcome_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('welcome_two_name' . $langf)</div>  <div class="title">@field('welcome_two_pos' . $langf)</div></div></div>
+                <div class="speaker speakers__three"><img src="@field('welcome_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('welcome_three_name' . $langf)</div>  <div class="title">@field('welcome_three_pos' . $langf)</div></div></div>
             </div>
         </div>
 
         <div class="s-container keynote">
-            @field('keynote_speech_txt' . $_SESSION['lang'])
+            @field('keynote_speech_txt' . $langf)
             <div class="speakers">
-                <div class="speaker speakers__one"><img src="@field('keynote_one')" alt="" class="speaker-img"> <div class="text"> <div class="name notranslate">@field('keynote_one_name' . $_SESSION['lang'])</div>  <div class="title">@field('keynote_one_pos' . $_SESSION['lang'])</div></div></div>
-                <div class="speaker speakers__two"><img src="@field('keynote_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('keynote_two_name' . $_SESSION['lang'])</div>  <div class="title">@field('keynote_two_pos' . $_SESSION['lang'])</div></div></div>
-                <div class="speaker speakers__three"><img src="@field('keynote_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('keynote_three_name' . $_SESSION['lang'])</div>  <div class="title">@field('keynote_three_pos' . $_SESSION['lang'])</div></div></div>
+                <div class="speaker speakers__one"><img src="@field('keynote_one')" alt="" class="speaker-img"> <div class="text"> <div class="name notranslate">@field('keynote_one_name' . $langf)</div>  <div class="title">@field('keynote_one_pos' . $langf)</div></div></div>
+                <div class="speaker speakers__two"><img src="@field('keynote_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('keynote_two_name' . $langf)</div>  <div class="title">@field('keynote_two_pos' . $langf)</div></div></div>
+                <div class="speaker speakers__three"><img src="@field('keynote_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('keynote_three_name' . $langf)</div>  <div class="title">@field('keynote_three_pos' . $langf)</div></div></div>
             </div>
         </div>
 
         <div class="s-container organizing">
-            @field('organizing_speech_txt' . $_SESSION['lang'])
+            @field('organizing_speech_txt' . $langf)
             <div class="speakers">
-                <div class="speaker speakers__one"><img src="@field('organizing_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('organizing_one_name' . $_SESSION['lang'])</div>  <div class="title">@field('organizing_one_pos' . $_SESSION['lang'])</div></div></div>
+                <div class="speaker speakers__one"><img src="@field('organizing_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('organizing_one_name' . $langf)</div>  <div class="title">@field('organizing_one_pos' . $langf)</div></div></div>
 
             </div>
         </div>
@@ -102,8 +102,8 @@
 
 <div class="container">
 
-    <div class="paragraph">@field('paragraph2' . $_SESSION['lang'])
-        @field('textfield2' . $_SESSION['lang'])
+    <div class="paragraph">@field('paragraph2' . $langf)
+        @field('textfield2' . $langf)
     </div>
 
 </div>
