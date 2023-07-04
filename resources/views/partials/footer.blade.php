@@ -1,3 +1,4 @@
+@php echo $_SESSION['lang']; @endphp
 <footer class="content-info">
   <div class="container">
     <div class="left">
