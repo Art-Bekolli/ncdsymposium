@@ -1,8 +1,11 @@
 @php session_start();
 if($_SESSION['lang'] == ''){
   echo 'eng';
+  echo $_POST['language'];
 }else{
   echo $_SESSION['lang'];
+  echo $_POST['language'];
+  
 }
 
 @endphp
