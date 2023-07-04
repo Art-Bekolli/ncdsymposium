@@ -34,7 +34,7 @@
 
     <div class="container">
 
-        <div class="left">22-29 <div class="bold">SEPTEMBER</div> 2023</div>
+        <div class="left">@field('stripe-txt')</div>
 
     </div>
 
@@ -75,26 +75,25 @@
         <div class="s-container welcome">
             @field('welcome_speech_txt' . $_SESSION['lang'])
             <div class="speakers">
-                <div class="speaker speakers__one"> <img src="@field('welcome_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Arben Vitia</div>  <div class="title">Ministry of Health</div></div></div>
-                <div class="speaker speakers__two"><img src="@field('welcome_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Naser Ramadani</div>  <div class="title">NIPHK</div></div></div>
-                <div class="speaker speakers__three"><img src="@field('welcome_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">Mr. Laurent Torche</div>  <div class="title">SDC - Swiss Embassy</div></div></div>
+                <div class="speaker speakers__one"> <img src="@field('welcome_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('welcome_one_name' . $_SESSION['lang'])</div>  <div class="title">@field('welcome_one_pos' . $_SESSION['lang'])</div></div></div>
+                <div class="speaker speakers__two"><img src="@field('welcome_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('welcome_two_name' . $_SESSION['lang'])</div>  <div class="title">@field('welcome_two_pos' . $_SESSION['lang'])</div></div></div>
+                <div class="speaker speakers__three"><img src="@field('welcome_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('welcome_three_name' . $_SESSION['lang'])</div>  <div class="title">@field('welcome_three_pos' . $_SESSION['lang'])</div></div></div>
             </div>
         </div>
 
         <div class="s-container keynote">
             @field('keynote_speech_txt' . $_SESSION['lang'])
             <div class="speakers">
-                <div class="speaker speakers__one"><img src="@field('keynote_one')" alt="" class="speaker-img"> <div class="text"> <div class="name notranslate">Mr. Sean Taylor</div>  <div class="title">World Heart Federation</div></div></div>
-                <div class="speaker speakers__two"><img src="@field('keynote_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Fatmire Mulhaxha Kollçaku</div>  <div class="title">Chair of the Commission for<br> Health and Social
-                    Welfare</div></div></div>
-                <div class="speaker speakers__three"><img src="@field('keynote_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">Dr. Rushit Ismaili</div>  <div class="title">Family Physician</div></div></div>
+                <div class="speaker speakers__one"><img src="@field('keynote_one')" alt="" class="speaker-img"> <div class="text"> <div class="name notranslate">@field('keynote_one_name' . $_SESSION['lang'])</div>  <div class="title">@field('keynote_one_pos' . $_SESSION['lang'])</div></div></div>
+                <div class="speaker speakers__two"><img src="@field('keynote_two')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('keynote_two_name' . $_SESSION['lang'])</div>  <div class="title">@field('keynote_two_pos' . $_SESSION['lang'])</div></div></div>
+                <div class="speaker speakers__three"><img src="@field('keynote_three')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('keynote_three_name' . $_SESSION['lang'])</div>  <div class="title">@field('keynote_three_pos' . $_SESSION['lang'])</div></div></div>
             </div>
         </div>
 
         <div class="s-container organizing">
             @field('organizing_speech_txt' . $_SESSION['lang'])
             <div class="speakers">
-                <div class="speaker speakers__one"><img src="@field('organizing_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">Florije Miftari Basholli</div>  <div class="title">NIPHK, Head of Ogranizing Committee</div></div></div>
+                <div class="speaker speakers__one"><img src="@field('organizing_one')" alt="" class="speaker-img"> <div class="text"> <div class="name">@field('organizing_one_name' . $_SESSION['lang'])</div>  <div class="title">@field('organizing_one_pos' . $_SESSION['lang'])</div></div></div>
 
             </div>
         </div>
