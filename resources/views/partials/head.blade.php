@@ -6,10 +6,8 @@ if(isset($_POST["language"])){
   $lang=$_POST["language"];
       if($lang == 1){
         do_shortcode('set_lang-eng');
-        header("Refresh:0");
       }else if($lang == 2){
         do_shortcode('set_lang-sq');
-        header("Refresh:0");
       }
   
 }
