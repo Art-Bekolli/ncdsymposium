@@ -17,7 +17,7 @@ function register_session()
 
 add_action('init', 'register_session');
 
-$_SESSION['lang'] = '-sq';
+$_SESSION['lang'] = '';
 $_SESSION['lang_v'];
    if(isset($_POST["language"])){
        $lang=$_POST["language"];
