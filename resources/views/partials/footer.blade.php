@@ -11,12 +11,11 @@ if(isset($_POST["language"])){
         $langf = '';
         header("Refresh:0");
       }else if($lang == 2){
-        do_shortcode('set_lang-sq');
         langsq();
         $langf = '-sq';
         header("Refresh:0");
       }
-  
+  echo $langf;
 }
 @endphp
 <footer class="content-info">
