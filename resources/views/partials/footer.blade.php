@@ -17,7 +17,7 @@
 
       <div class="info2">
         @field('press2_pos' . $_SESSION['lang'])<br>
-        @field('press2_name' . $_SESSION['lang']) @endphp
+        @field('press2_name' . $_SESSION['lang']) 
       </div>
 
     </div>
