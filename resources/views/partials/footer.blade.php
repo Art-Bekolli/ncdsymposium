@@ -15,6 +15,6 @@
       </div>
 
     </div>
-    <div class="right"><div class="more">@php echo get_field('information_txt' . $_SESSION['lang'], 279); @endphp</div></div>
+      <div class="right"><div class="more">@php echo get_field('information_txt' . $_SESSION['lang'], 279); @endphp</div></div>
   </div>
 </footer>

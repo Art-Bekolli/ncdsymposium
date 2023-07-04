@@ -7,6 +7,16 @@
 use Roots\Sage\Config;
 use Roots\Sage\Container;
 
+function register_session()
+{
+  if( !session_id() )
+  {
+    session_start();
+  }
+}
+
+add_action('init', 'register_session');
+
 /**
  * Helper function for prettying up errors
  * @param string $message

@@ -1,7 +1,6 @@
 {{--
   Template Name: Front Page
 --}}
-@php session_start() @endphp
 
 @extends('layouts.app')
 
