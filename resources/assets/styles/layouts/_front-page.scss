@@ -98,20 +98,16 @@
     &__projects{
         .container{
             .box{
-            @include rem(gap, 43px);
             display: flex;
             justify-content: center;
             .left{
                 @include rem(max-width, 909px);
                 @include rem(margin-top, 131px);
-                @include rem(font-size, 23px);
+                @include rem(font-size, 26px);
                 @include rem(line-height, 30px);
-                color: $globalblue;
+                color: #5357A1;
                 font-weight: 300;
                 text-align: center;
-            }
-            .right{
-                @include rem(margin-top, 102px);
             }
         }
 
@@ -134,7 +130,7 @@
             @include rem(max-width, 1108px);
             margin: auto;
             @include rem(margin-bottom, 164px);
-            color: #545454;     
+            color: #5357A1;     
             font-weight: 300;
             text-align: center;
             
@@ -225,6 +221,8 @@
                 @include rem(line-height, 34px);
                 position: relative;
                 @include rem(padding, 84px 27px);
+                text-align: center;
+                color: #5357A1;
                 p{
                     @include rem(margin-bottom, 45px);
                 }

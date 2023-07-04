@@ -102,7 +102,7 @@
 
 <div class="container">
 
-    <div class="paragraph">@field('paragraph2' . $_SESSION['lang'])<br>
+    <div class="paragraph">@field('paragraph2' . $_SESSION['lang'])
         @field('textfield2' . $_SESSION['lang'])
     </div>
 
