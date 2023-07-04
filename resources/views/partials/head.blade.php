@@ -5,12 +5,10 @@ $_SESSION['lang'] = '';
 if(isset($_POST["language"])){
   $lang=$_POST["language"];
       if($lang == 1){
-        $_SESSION['lang'] = '';
-        $_SESSION['lang_v'] = 1;
+        do_shortcode('set_lang-eng');
         header("Refresh:0");
       }else if($lang == 2){
-        $_SESSION['lang'] = '-sq';
-        $_SESSION['lang_v'] = 2;
+        do_shortcode('set_lang-sq');
         header("Refresh:0");
       }
   
