@@ -12,13 +12,14 @@ function register_session()
   if( !session_id() )
   {
     session_start();
+    $_SESSION['lang'] = '';
+    $_SESSION['lang_v'];
   }
 }
 
 add_action('init', 'register_session');
 
-$_SESSION['lang'] = '';
-$_SESSION['lang_v'];
+
    if(isset($_POST["language"])){
        $lang=$_POST["language"];
       if($lang == 1){
