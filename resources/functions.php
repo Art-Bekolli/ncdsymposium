@@ -12,15 +12,14 @@ function register_session()
   if( !session_id() )
   {
     session_start();
-    $_SESSION['lang'] = '';
-    $_SESSION['lang_v'];
+
   }
 }
 
 add_action('init', 'register_session');
 
 
-   if(isset($_POST["language"])){
+   function languagefunction(){
        $lang=$_POST["language"];
       if($lang == 1){
         $_SESSION['lang'] = '';
@@ -32,6 +31,8 @@ add_action('init', 'register_session');
         header("Refresh:0");
       }
    }
+
+   add_shortcode( 'language_custom', 'languagefunction' );
 
 
 /**
