@@ -100,6 +100,7 @@
             .box{
             @include rem(gap, 43px);
             display: flex;
+            justify-content: center;
             .left{
                 @include rem(max-width, 909px);
                 @include rem(margin-top, 131px);
@@ -107,6 +108,7 @@
                 @include rem(line-height, 30px);
                 color: $globalblue;
                 font-weight: 300;
+                text-align: center;
             }
             .right{
                 @include rem(margin-top, 102px);
@@ -115,11 +117,8 @@
 
         .projects{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            @include mobile{
-                grid-template-columns: repeat(2, 1fr);
-                column-gap: 2.6rem;
-            }
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 2.6rem;
             @include rem(column-gap, 138px);
             @include rem(max-width, 930px);
             margin: auto;
@@ -138,20 +137,7 @@
             color: #545454;     
             font-weight: 300;
             text-align: center;
-            &::before{
-                content: "";
-                position: absolute;
-                inset: 0;
-                @include rem(border-radius, 61px);
-                @include rem(padding, 5px);
-                background: linear-gradient(to top, #2051D0, #2E94F1);
-                -webkit-mask: 
-                    linear-gradient(#fff 0 0) content-box, 
-                    linear-gradient(#fff 0 0);
-                -webkit-mask-composite: xor;
-                mask-composite: exclude;
-                pointer-events: none;
-            }
+            
         }
 
         
@@ -175,7 +161,7 @@
     }
 
     &__speeches{
-        background: linear-gradient(to top, #2051D0, #3B98EE);
+        background: linear-gradient(to top, #5357A1, #76D0D9);
         .container{
             color: white;
             img{
@@ -188,10 +174,9 @@
             }
             .s-container{
                 @include rem(padding, 133px 0 118px 0);
-                font-weight: 300;
-                font-style: italic;
+                font-weight: 800;
                 @include rem(font-size, 56px);
-                
+                text-align: center;
                 .speakers{
                     flex-wrap: wrap;
                     @include rem(margin-top, 96px);
@@ -231,31 +216,29 @@
         
         .container{
             display: flex;
-            @include rem(gap, 57px);
-            @include tablet{
-                flex-direction: column;
-            }
-            @include mobile{
-                flex-direction: column;
-            }
+            justify-content: center;
             .paragraph{
-                @include rem(margin-top, 156px);
+                @include rem(margin, 156px 0);
                 font-weight: 300;
                 font-style: italic;
                 @include rem(font-size, 26px);
                 @include rem(line-height, 34px);
-            }
-            .p-img{
-                @include rem(margin-top, 124px);
-                display: flex;
-                justify-content: center;
-                @include tablet{
-                    margin-top: 0;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    @include rem(border-radius, 61px);
+                    @include rem(padding, 5px);
+                    background: linear-gradient(to top, #2051D0, #2E94F1);
+                    -webkit-mask: 
+                        linear-gradient(#fff 0 0) content-box, 
+                        linear-gradient(#fff 0 0);
+                    -webkit-mask-composite: xor;
+                    mask-composite: exclude;
+                    pointer-events: none;
                 }
-                @include mobile{
-                    margin-top: 0;
-                }
             }
+
         }
     }
 
