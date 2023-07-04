@@ -1,8 +1,6 @@
 <!doctype html>
 
 @php
-$_SESSION['lang'] = '';
-    $_SESSION['lang_v'];
 
 $langf;
 if(isset($_POST["language"])){
