@@ -18,7 +18,7 @@ function register_session()
 add_action('init', 'register_session');
 
 
-$_SESSION['lang'] = '-sq';
+
 
 
 /**
