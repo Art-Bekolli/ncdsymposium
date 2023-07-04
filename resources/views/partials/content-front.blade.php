@@ -34,7 +34,7 @@
 
     <div class="container">
 
-        <div class="left">@field('stripe-txt')</div>
+        <div class="left">@field('stripe-txt' . $_SESSION['lang'])</div>
 
     </div>
 
