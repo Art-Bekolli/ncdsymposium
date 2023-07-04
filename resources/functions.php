@@ -25,7 +25,6 @@ function langeng(){
     echo "eng";
 }
 
-add_shortcode('set_lang-eng', 'langeng');
 
 function langsq(){
     $_SESSION['lang'] = '-sq';
@@ -33,7 +32,6 @@ function langsq(){
     echo "sq";
 }
 
-add_shortcode('set_lang-sq', 'langsq');
 
 /**
  * Helper function for prettying up errors
