@@ -1,8 +1,8 @@
 @php
 
-if(isset($_POST["language"])){
+
        $langf=$_POST["language"];
-}
+
 @endphp
 <footer class="content-info">
   <div class="container">
