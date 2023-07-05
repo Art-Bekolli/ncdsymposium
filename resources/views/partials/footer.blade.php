@@ -32,6 +32,6 @@ if(isset($_POST["language"])){
       </div>
 
     </div>
-      <div class="right"><div class="more">@field('information_txt' . $langf)</div></div>
+      <div class="right"><div class="more">@field('information_txt' . $_SESSION['lang'])</div></div>
   </div>
 </footer>
