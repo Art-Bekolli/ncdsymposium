@@ -1,22 +1,4 @@
 <!doctype html>
-
-@php
-
-$langf;
-if(isset($_POST["language"])){
-  $lang=$_POST["language"];
-      if($lang == 1){
-        langeng();
-        header('refresh:0');
-      }else if($lang == 2){
-        langsq();
-        header('refresh:0');
-      }
-  
-}
-echo $langf;
-@endphp
-
 <html {!! get_language_attributes() !!}>
   @include('partials.head')
   <body @php body_class() @endphp>
