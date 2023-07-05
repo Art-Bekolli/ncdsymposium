@@ -18,6 +18,7 @@
       </div>
     </div>
     @php do_action('get_footer') @endphp
+    @include('partials.footer')
     @include('partials.components.lang-switch')
   </body>
 </html>
