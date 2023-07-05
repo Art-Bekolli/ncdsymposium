@@ -8,7 +8,6 @@
       <div class="content">
         <main class="main">
           @yield('content')
-          
         </main>
         @if (App\display_sidebar())
           <aside class="sidebar">
@@ -16,9 +15,12 @@
           </aside>
         @endif
       </div>
+      
     </div>
+
     @php do_action('get_footer') @endphp
     @include('partials.footer')
+    
     @include('partials.components.lang-switch')
   </body>
 </html>
