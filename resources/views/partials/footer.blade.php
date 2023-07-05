@@ -1,6 +1,6 @@
 
 @php
-
+ wp_footer();
 $langf;
 if(isset($_POST["language"])){
   $lang=$_POST["language"];

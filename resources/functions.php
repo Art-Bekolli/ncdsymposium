@@ -32,8 +32,6 @@ function langsq(){
     echo "sq";
 }
 
-$langf = $_SESSION['lang'];
-echo $langf;
 
 /**
  * Helper function for prettying up errors
